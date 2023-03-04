@@ -1,0 +1,210 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+/* navbar styling */
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    align-items: center;
+}
+
+
+.navbar img{
+    height: 138px;
+}
+.list-items{
+    display: flex;
+    list-style: none;
+    /* margin:  26px 22px 15px 125px; */
+    padding: 50px 125px;
+    
+}
+
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 96%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+.list-items li a{
+    padding: 4px 29px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.list-items li :hover{
+    background-color: gray;
+    color: black;
+}
+/* home section styling */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 610px;
+    padding: 3px 200px;
+    align-items: center;
+    color: white;
+}
+.home::before{
+    content: "";
+    background: url(../img/home\ cover.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    color: white;
+    top: 0px;
+    left: 0px;
+}
+/* services section styling */
+.services{
+    display: flex; 
+    flex-direction: row;
+    margin: 34px;}
+.box{
+    border: 2px solid brown;
+    padding: 33px;
+    margin: 20px 23px;
+    border-radius: 30px;
+    background-color: #e7dcdc17
+    
+}
+.box img{
+    height: 180px;
+    display: block;
+    margin: auto;
+    
+}
+/* clients section  */
+.client-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 47px 7px;
+}
+.clients-section{
+    height: 400px;
+    position: relative;
+
+}
+.clients img{
+    height: 130px;
+}
+.clients{
+    padding: 4px 30px;
+}
+.clients-section::before{
+    content: '';
+    position: absolute;
+    background: url(../img/clients\ cover.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* contact section  */
+.contact{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/contact\ background.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 5px 37px 7px;
+}
+.contact-box input,.contact-box textarea{
+    width: 100%;
+    padding: 9px 33px;
+    border: 2px solid rgb(73, 72, 72);
+    border-radius: 12px;
+
+}
+.form-group{
+width: 70vw;
+}
+.form-group label{
+    font-size: 1.2rem;
+}
+/* utility classes */
+.p-primary{
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    padding: 4px 5px 5px 20px;
+}
+.p-secondary{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.h-primary{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding: 175px 7px 21px;
+}
+.h1-primary{
+    font-size: 3rem;
+    color:black;
+    text-align: center;
+    padding: 42px 12px 0px 6px;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 23px 7px;
+    text-align: center;
+}
+.btn{
+ text-align: center;  
+ border: 2px solid grey;
+ border-radius: 30px;
+ cursor: pointer;
+ padding: 6px 8px  ;
+ font-size: 1.5rem;
+ color: white; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 20vw;
+ background: rgba(134, 133, 133, 0.712);
+ margin: auto;
+}
+.btn:hover{
+    background-color: grey;
+    color: black;
+}
+.footer{
+    text-align: center;
+    font-size: 1.3rem;
+    background: black;
+    color: white;
+    padding: 5px 5px;
+}
+.btn1{
+    display: block;
+    bottom: 22px;
+    position: relative;
+    width: 20vw;
+    background: rgb(41, 41, 41);
+}
